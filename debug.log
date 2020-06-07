@@ -1,2 +1,0 @@
-[0527/180940.625:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
-[0527/180940.628:ERROR:exception_snapshot_win.cc(98)] thread ID 6652 not found in process
