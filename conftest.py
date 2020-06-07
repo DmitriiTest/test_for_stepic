@@ -14,8 +14,6 @@ def pytest_addoption(parser):
 def browser(request):
     browser_name = request.config.getoption("browser_name")
     your_language = request.config.getoption("language")
-#    your_language = None
-#    browser = None
     if browser_name == "chrome":
         options = Options()
         options.add_experimental_option('prefs', {'intl.accept_languages': your_language})
@@ -27,7 +25,6 @@ def browser(request):
         browser = webdriver.Firefox(firefox_profile=fp)
         print("\n start firefox browser for test..")
     else:
-#        raise pytest.UsageError("--browser_name should be chrome or firefox")
         print('You do not input a nzme browser')
     yield browser
     print("\n quit browser..")
